@@ -4,6 +4,7 @@ let applyBtn = document.querySelector(".applyBtn");
 let colorName = document.querySelector(".colorName");
 let body = document.querySelector("body");
 
+
 const colorArray = [
   "black",
   "seagreen",
@@ -42,7 +43,10 @@ function handleApplyBtn() {
     return;
   }
   changeColor(color);
+  colorInput.value = "";
 }
+
+
 
 randomBtn.addEventListener("click", handleRandomBtn);
 applyBtn.addEventListener("click", handleApplyBtn);
